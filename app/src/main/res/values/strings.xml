@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DragAndDrop IT</string>
+    <string name="add_value">Add value</string>
+    <string name="delete_value">Delete</string>
+    <string name="reset">Reset</string>
+</resources>
