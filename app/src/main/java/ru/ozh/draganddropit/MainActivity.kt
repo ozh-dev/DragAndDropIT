@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             onExited = { v, _, e ->
                 doIf(e.clipDescription.label != "add",
                         {
-                            scale(v, true)
+                            scale(v, false)
                         })
             },
             onDrop = { v, dg, e ->
