@@ -6,72 +6,10 @@
     android:layout_height="match_parent"
     tools:context="ru.ozh.draganddropit.MainActivity">
 
-    <FrameLayout
-        android:id="@+id/delete_tv"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_margin="8dp"
-        android:background="?android:attr/colorPrimary">
-
-        <ImageView
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_gravity="center"
-            android:tint="?android:attr/colorAccent"
-            app:srcCompat="@drawable/ic_delete" />
-
-    </FrameLayout>
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/actions_layout"
-        android:layout_below="@id/delete_tv"
         android:padding="8dp" />
-
-    <LinearLayout
-        android:id="@+id/actions_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <FrameLayout
-            android:id="@+id/increment_view"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
-            android:background="?android:attr/colorPrimaryDark"
-            android:gravity="center"
-            app:layout_constraintBottom_toTopOf="@+id/reset_btn"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
-                android:tint="?android:attr/colorAccent"
-                app:srcCompat="@drawable/ic_add_circle" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/reset_btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
-            android:background="?android:attr/colorPrimaryDark"
-            android:gravity="center"
-            app:layout_constraintEnd_toEndOf="parent">
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
-                android:tint="?android:attr/colorAccent"
-                app:srcCompat="@drawable/ic_refresh" />
-        </FrameLayout>
-    </LinearLayout>
 
 </RelativeLayout>

@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:id="@+id/root_item"
     android:maxHeight="100dp"
-    android:maxWidth="100dp"
     android:layout_margin="8dp"
     android:background="@android:color/holo_blue_bright">
 
